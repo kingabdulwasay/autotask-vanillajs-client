@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+    --vscode-bg: #1e1e1e;
+    --vscode-sidebar: #252526;
+    --vscode-active-tab: #1e1e1e;
+    --vscode-inactive-tab: #2d2d2d;
+    --vscode-text: #d4d4d4;
+    --vscode-border: #404040;
+    --vscode-button: #0e639c;
+    --vscode-button-hover: #1177bb;
+    --vscode-foreground: #ffffff;
+    --vscode-input-background: #3c3c3c;
+    --vscode-input-foreground: #cccccc;
+    --vscode-input-border: #3c3c3c;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color:var(--vscode-bg);
+    letter-spacing: 3px;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    height: 60px;
+    background-color: var(--vscode-sidebar);
+    color: var(--vscode-text);
+}
+.logo{
+    cursor: pointer;
+    padding: 20px 10px;
+}
+
+.logo:hover{
+    background-color: var(--vscode-active-tab);
+}
+
+.logo i{
+    margin: 0 5px;
+}
+
+.logo span{
+    font-weight: 700;
+}
+ul{
+    display: flex;
+    gap: 15px;
+    margin: 0 20px;
+}
+li{
+    list-style-type: none;
+    font-size: small;
+    cursor: pointer;
+    padding: 10px;
+}
+li:hover{
+    background-color: var(--vscode-inactive-tab);
+}
+li a{
+    color: var(--vscode-text);
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.user-prompt{
+    height: 250px;
+    width: 40%;
+    align-self: flex-end;
+    background-color: var(--vscode-sidebar);
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.user-prompt textarea{
+    min-height: 100%;
+    border: 0;
+    outline: none;
+    resize: none;
+    min-width:100%;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    line-height: 2rem;
+
+}
+
+.user-prompt textarea::-webkit-scrollbar{
+    display: none;
+}
+.user-prompt-btns{
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.user-prompt-btns button{
+        background-color: var(--vscode-button);
+    padding: 5px 10px;
+    font-size: small;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius:5px;
+    margin: 0 5px;
+}
+
+.user-prompt-btns button:hover{
+ background-color: var(--vscode-button-hover);
+
+}
+.system-response{
+    width: 55%;
+    align-self: flex-start;
+    background-color: var(--vscode-sidebar);
+    margin: 30px;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: auto;
+}
+.system-response::-webkit-scrollbar{
+    display: none;
+}
+.response-head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+.res-head-btns-grp{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 5px 0;
+}
+
+.res-head-btns-grp button{
+    background-color: var(--vscode-button);
+    /* width: 20%; */
+    padding: 10px;
+
+    font-size: small;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius:5px;
+}
+.res-head-btns-grp button:hover{
+    background-color: var(--vscode-button-hover);
+}
+.list{
+    width: 100%;
+    padding: 10px;
+}
+.list ul{
+    display: flex;
+    flex-direction: column;
+}
+.list ul li{
+    list-style-type: disc;
+    color: var(--vscode-text);
+    background-color: var(--vscode-inactive-tab);
+    margin: 5px 0;
+}
+    .list ul li div{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+}
+.list ul .dateandmoney{
+    width:100% ;
+       display: flex;
+       gap: 15px;
+}
+
+
+
+.dateandmoney .date{
+    color: #0ac529;
+       display: flex;
+       justify-content: start;
+       align-items: center;
+       font-size: 13px;
+       gap: 10px;
+       cursor: pointer;
+        background-color:#0ac52993;;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.dateandmoney .cost{
+    color: #c5b90a;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: small;
+    gap: 10px;
+    cursor: pointer;
+       font-size: 13px;
+
+    background-color: #c5b90a88;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.list ul li input{
+    background-color: transparent;
+    padding: 5px 10px;
+    outline: none;
+    border: 0;
+    color: var(--vscode-text);
+    font-size: 16px;
+}
+.btns-list button{
+    margin: 0 5px;
+    background-color: var(--vscode-button);
+    outline: none;
+    border: 0;
+    padding:5px 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btns-list button:hover{
+    background-color: var(--vscode-button-hover);
+}

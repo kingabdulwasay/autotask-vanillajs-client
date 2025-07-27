@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Text to tasks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><span><i class="fa-solid fa-pen-nib"></i>AutoTasker</span></div>
+        <div class="items">
+            <ul>
+                
+                <li>
+                    <a href="index.html">
+                        New Prompt
+                    </a>
+                </li>
+                <li>Projects</li>
+                <li>Discussion</li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="prompt-box">
+            <h1>Automate <span class="element"></span></h1>
+            
+            <span>Intelligent planning at the speed of thought.</span>
+
+            <div class="prompt">
+                    <textarea name="" id="prompt" placeholder="Enter your project requirements"></textarea>
+               
+                    <div id="btn-grp" class="btns-grp">
+                        <button><i class="fa-solid fa-paperclip"></i></buttoan>
+                        <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+     <script>
+    var typed = new Typed('.element', {
+      strings: ['project workflow.', 'API testing.', 'version control.', ' database processes.', 'document generation.', 'codebase management.'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>

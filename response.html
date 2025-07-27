@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+    <link rel="stylesheet" href="response.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+      <header>
+        <div class="logo"><span><i class="fa-solid fa-pen-nib"></i>AI PLANNER</span></div>
+        <div class="items">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        New Prompt
+                    </a>
+                </li>
+                <li>Projects</li>
+                <li>Discussion</li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="user-prompt">
+            <textarea name="" id="user-prompt" disabled>
+ 
+            </textarea>
+            <div class="user-prompt-btns">
+                <button>Copy</button>
+                <button>Edit</button>
+            </div>
+        </div>
+        <div class="system-response">
+            <div class="response-head">
+                <div class="res-head-btns-grp">
+                    <button id="get-features">
+                        <i class="fa-solid fa-list"></i>
+                         <span>
+                             Features
+                    </span> 
+                </button>
+                    <button id="get-tasks">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                          <span>
+                              Tasks
+                          </span>
+                    </button>
+                  
+             
+                          <button>
+                           <i class="fa-solid fa-cloud"></i>
+                    <span>
+                        Save
+                    </span>
+                    </button> 
+                </div>
+            </div>
+           <div id="list" class="list">
+            <ul>
+                <li>
+                    <div>
+                        <input id="list-item-input" type="text" value="Create" a="" task="" with="" title,="" description,="" due="" date,="" and="" time="" style="display: none;">
+        <span>
+        Create a task with a title, description, due date, and time
+        </span>
+    </div>
+    
+</li>
+
+    </ul>
+</div>
+        </div>
+    </div>
+    <script src="response.js"></script>
+</body>
+</html>
