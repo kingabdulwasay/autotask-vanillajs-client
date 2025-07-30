@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const url = 'http://localhost:3000'
+    const url = 'https://langchain-tools-server.vercel.app'
     const sendbtn = document.getElementById('sendBtn')
     sendbtn.addEventListener('click', async () => {
         const prompt = document.getElementById('prompt').value

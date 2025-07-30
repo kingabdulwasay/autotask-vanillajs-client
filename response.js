@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const url = 'http://localhost:3000'
+    const url = 'https://langchain-tools-server.vercel.app'
     const prompt = JSON.parse(localStorage.getItem('prompt')) 
      document.getElementById('user-prompt').value = prompt
     const response = JSON.parse(localStorage.getItem('response'))
